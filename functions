@@ -9,5 +9,9 @@ function server {
 }
 
 function local {
-  ruby ~/Documents/dev/lib/scripts/start_local_portal.rb
+  ruby ~/Documents/dev/lib/scripts/start_local_portal.rb "cap.quintech.local"
+}
+
+function vzdemo {
+  ruby ~/Documents/dev/lib/scripts/start_local_portal.rb "vzdemo.rova.com"
 }
