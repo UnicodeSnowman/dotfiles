@@ -10,3 +10,5 @@ unset file
 for file in ~/.{bashrc,functions,bash_prompt}; do
     source "$file"
 done
+
+#PS1=\h:\W \u ☃ 
