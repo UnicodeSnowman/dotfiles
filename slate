@@ -1,0 +1,62 @@
+# Configs
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
+# Hyper Key
+alias hyper ctrl;alt;cmd
+
+# Monitor Aliases
+alias monitor-macbook 1
+alias monitor-hp 0
+
+# Misc Aliases
+alias browser 'Google Chrome'
+alias editor 'MacVim'
+alias windoze 'Parallels Desktop'
+alias messages 'Messages'
+alias skype 'Skype'
+alias irc 'LimeChat'
+alias spotify 'Spotify'
+alias twitter 'Twitter'
+
+# Monitor Position Aliases
+# --------------------------
+
+# Macbook Monitor
+alias macbook-full move screenOriginX;screenOriginY screenSizeX;screenSizeY ${monitor-macbook}
+alias macbook-left-half move screenOriginX;screenOriginY screenSizeX/2;screenSizeY ${monitor-macbook}
+alias macbook-right-two-thirds-top move screenOriginX+(screenSizeX/2);screenOriginY screenSizeX/2;screenSizeY/2 ${monitor-macbook}
+alias macbook-right-two-thirds-bottom move screenOriginX+(screenSizeX/2);screenOriginY+(screenSizeY/2) screenSizeX/2;screenSizeY/2 ${monitor-macbook}
+
+# HP Monitor
+alias hp-full move screenOriginX;screenOriginY screenSizeX;screenSizeY ${monitor-hp}
+alias hp-right-third move screenOriginX+(2*screenSizeX/3);screenOriginY screenSizeX/3;screenSizeY ${monitor-hp}
+alias hp-left-two-thirds move screenOriginX;screenOriginY 2*screenSizeX/3;screenSizeY ${monitor-hp}
+
+# Space 1 Layout
+# --------------------------
+layout space_1 ${browser}:MAIN_FIRST ${macbook-full}
+layout space_1 ${editor}:MAIN_FIRST ${hp-full}
+# layout space_1 ${windoze}:MAIN_FIRST ${hp-full}
+
+# Space 2 Layout
+# --------------------------
+layout space_2 ${messages}:MAIN_FIRST ${macbook-right-two-thirds-top}
+layout space_2 ${skype}:MAIN_FIRST ${hp-right-third}
+layout space_2 ${irc}:MAIN_FIRST ${macbook-right-two-thirds-bottom}
+layout space_2 ${spotify}:MAIN_FIRST ${hp-left-two-thirds}
+layout space_2 ${twitter}:MAIN_FIRST ${macbook-left-half}
+
+bind 1:${hyper} layout space_1
+bind 2:${hyper} layout space_2
+
+# Default Layouts
+default 2monitors resolutions:${monitor-macbook};${monitor-hp};
+#default 2monitor  resolutions:${monitor-macbook}
