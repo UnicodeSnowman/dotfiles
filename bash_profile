@@ -11,4 +11,4 @@ for file in ~/.{bashrc,functions}; do
    source "$file"
 done
 
-#PS1=\h:\W \u ☃ 
+# ☃ 
