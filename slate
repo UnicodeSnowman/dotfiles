@@ -10,7 +10,8 @@ config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
 
 # Hyper Key
-alias hyper ctrl;alt;cmd
+alias hyper_multi ctrl;alt;cmd
+alias hyper_single ctrl;alt
 
 # Monitor Aliases
 alias monitor-macbook 1
@@ -40,7 +41,15 @@ alias hp-full move screenOriginX;screenOriginY screenSizeX;screenSizeY ${monitor
 alias hp-right-third move screenOriginX+(2*screenSizeX/3);screenOriginY screenSizeX/3;screenSizeY ${monitor-hp}
 alias hp-left-two-thirds move screenOriginX;screenOriginY 2*screenSizeX/3;screenSizeY ${monitor-hp}
 
-# Space 1 Layout
+# Space 1 Layout (single-monitor)
+# --------------------------
+layout space_1_single ${browser}:MAIN_FIRST ${macbook-full}
+
+# Space 2 Layout (single-monitor)
+# --------------------------
+layout space_2_single ${editor}:MAIN_FIRST ${macbook-full}
+
+# Space 1 Layout (multi-monitor)
 # --------------------------
 layout space_1 ${browser}:MAIN_FIRST ${macbook-full}
 layout space_1 ${editor}:MAIN_FIRST ${hp-full}
@@ -54,8 +63,11 @@ layout space_2 ${irc}:MAIN_FIRST ${macbook-right-two-thirds-bottom}
 layout space_2 ${spotify}:MAIN_FIRST ${hp-left-two-thirds}
 layout space_2 ${twitter}:MAIN_FIRST ${macbook-left-half}
 
-bind 1:${hyper} layout space_1
-bind 2:${hyper} layout space_2
+bind 1:${hyper_multi} layout space_1
+bind 2:${hyper_multi} layout space_2
+
+bind 1:${hyper_single} layout space_1_single
+bind 2:${hyper_single} layout space_2_single
 
 # Default Layouts
 default 2monitors resolutions:${monitor-macbook};${monitor-hp};
