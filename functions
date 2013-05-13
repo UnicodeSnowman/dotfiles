@@ -1,16 +1,7 @@
-
 function md() {
     mkdir -p "$@" && cd "$@"
 }
 
 function server {
    python -m SimpleHTTPServer 3000 
-}
-
-function local {
-  ruby ~/dev/lib/scripts/start_local_portal.rb "cap.quintech.local"
-}
-
-function vzdemo {
-  ruby ~/dev/lib/scripts/start_local_portal.rb "vzdemo.rova.com"
 }
