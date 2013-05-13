@@ -5,22 +5,21 @@
 # prompt: \m/
 PS1="\[$(tput setaf 666)\]\w \$ \[$(tput sgr0)\]"
 
+
 # for file in ~/.{functions}; do
-#    [ -r "$file" ] && source "$file"
-# done
-# unset file
-
-#for file in ~/.{bashrc,functions}; do
 #   source "$file"
-#done
+# done
 
-$export PATH=":~/.local/bin:usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
+$export PATH="~/.local/bin:usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
+
+# load command line functions
+source functions
 
 # -----------------------------------------------------------------
 #
 # Oh snap it's some python shit...
 #
-# Path ------------------------------------------------------------
+# -----------------------------------------------------------------
 if [ -d ~/.local/bin ]; then
   export PATH=~/.local/bin:$PATH
 fi

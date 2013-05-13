@@ -4,9 +4,13 @@
 # Add /usr/local/sbin, for nginx
 # PATH=$PATH:$HOME/.rvm/bin:/usr/local/sbin
 
+# Lots of virtual environment setup shenanigans for python/django
+#
+# running 'mkvirtualenv foobar' will create virtual env at 
+# ~/sites/env/foobar
+#
 # Locate virtualenvwrapper binary
 if [ -f ~/.local/bin/virtualenvwrapper.sh ]; then
-    echo "exporting virtualenvwrapper.sh"
     export VENVWRAP=~/.local/bin/virtualenvwrapper.sh
 fi
 
