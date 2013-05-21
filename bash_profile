@@ -5,13 +5,10 @@
 # prompt: \m/
 PS1="\[$(tput setaf 666)\]\w \$ \[$(tput sgr0)\]"
 
-
-# for file in ~/.{functions}; do
-#   source "$file"
-# done
+# aliases
+alias dropbox='cd ~/Dropbox'
 
 $export PATH="~/.local/bin:usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
-
 
 # -----------------------------------------------------------------
 #

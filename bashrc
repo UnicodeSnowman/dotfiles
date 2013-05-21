@@ -1,11 +1,8 @@
 
-
 # Add RVM to PATH for scripting
 # Add /usr/local/sbin, for nginx
 # PATH=$PATH:$HOME/.rvm/bin:/usr/local/sbin
 
-# aliases
-alias dropbox='cd ~/Dropbox'
 
 # Lots of virtual environment setup shenanigans for python/django
 #
