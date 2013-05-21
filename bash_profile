@@ -12,8 +12,6 @@ PS1="\[$(tput setaf 666)\]\w \$ \[$(tput sgr0)\]"
 
 $export PATH="~/.local/bin:usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
 
-# load command line functions
-source functions
 
 # -----------------------------------------------------------------
 #
@@ -32,6 +30,11 @@ fi
 # Load in .bashrc -------------------------------------------------
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
+fi
+
+# load command line functions -------------------------------------
+if [ -f ~/.functions ]; then
+    source ~/.functions
 fi
 
 # ☃ 
