@@ -15,7 +15,7 @@ alias hyper_single ctrl;alt
 
 # Monitor Aliases
 alias monitor-macbook 1
-alias monitor-hp 0
+alias monitor-dell 0
 
 # Misc Aliases
 alias browser 'Google Chrome'
@@ -37,9 +37,9 @@ alias macbook-right-two-thirds-top move screenOriginX+(screenSizeX/2);screenOrig
 alias macbook-right-two-thirds-bottom move screenOriginX+(screenSizeX/2);screenOriginY+(screenSizeY/2) screenSizeX/2;screenSizeY/2 ${monitor-macbook}
 
 # HP Monitor
-alias hp-full move screenOriginX;screenOriginY screenSizeX;screenSizeY ${monitor-hp}
-alias hp-right-third move screenOriginX+(2*screenSizeX/3);screenOriginY screenSizeX/3;screenSizeY ${monitor-hp}
-alias hp-left-two-thirds move screenOriginX;screenOriginY 2*screenSizeX/3;screenSizeY ${monitor-hp}
+alias dell-full move screenOriginX;screenOriginY screenSizeX;screenSizeY ${monitor-dell}
+alias dell-right-third move screenOriginX+(2*screenSizeX/3);screenOriginY screenSizeX/3;screenSizeY ${monitor-dell}
+alias dell-left-two-thirds move screenOriginX;screenOriginY 2*screenSizeX/3;screenSizeY ${monitor-dell}
 
 # Space 1 Layout (single-monitor)
 # --------------------------
@@ -52,15 +52,15 @@ layout space_2_single ${editor}:MAIN_FIRST ${macbook-full}
 # Space 1 Layout (multi-monitor)
 # --------------------------
 layout space_1 ${browser}:MAIN_FIRST ${macbook-full}
-layout space_1 ${editor}:MAIN_FIRST ${hp-full}
-# layout space_1 ${windoze}:MAIN_FIRST ${hp-full}
+layout space_1 ${editor}:MAIN_FIRST ${dell-full}
+# layout space_1 ${windoze}:MAIN_FIRST ${dell-full}
 
 # Space 2 Layout
 # --------------------------
 layout space_2 ${messages}:MAIN_FIRST ${macbook-right-two-thirds-top}
-layout space_2 ${skype}:MAIN_FIRST ${hp-right-third}
+layout space_2 ${skype}:MAIN_FIRST ${dell-right-third}
 layout space_2 ${irc}:MAIN_FIRST ${macbook-right-two-thirds-bottom}
-layout space_2 ${spotify}:MAIN_FIRST ${hp-left-two-thirds}
+layout space_2 ${spotify}:MAIN_FIRST ${dell-left-two-thirds}
 layout space_2 ${twitter}:MAIN_FIRST ${macbook-left-half}
 
 bind 1:${hyper_multi} layout space_1
@@ -70,5 +70,5 @@ bind 1:${hyper_single} layout space_1_single
 bind 2:${hyper_single} layout space_2_single
 
 # Default Layouts
-default 2monitors resolutions:${monitor-macbook};${monitor-hp};
+default 2monitors resolutions:${monitor-macbook};${monitor-dell};
 #default 2monitor  resolutions:${monitor-macbook}
