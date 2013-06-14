@@ -5,3 +5,7 @@ function md() {
 function server {
    python -m SimpleHTTPServer 3000 
 }
+
+#function pass {
+#   node ~/.dotfiles/pass_params.js "test test test"
+#}
