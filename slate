@@ -26,6 +26,7 @@ alias skype 'Skype'
 alias irc 'LimeChat'
 alias spotify 'Spotify'
 alias twitter 'Twitter'
+alias finder 'Finder'
 
 # Monitor Position Aliases
 # --------------------------
@@ -61,7 +62,7 @@ layout space_2 ${messages}:MAIN_FIRST ${macbook-right-two-thirds-top}
 layout space_2 ${skype}:MAIN_FIRST ${dell-right-third}
 layout space_2 ${irc}:MAIN_FIRST ${macbook-right-two-thirds-bottom}
 layout space_2 ${spotify}:MAIN_FIRST ${dell-left-two-thirds}
-layout space_2 ${twitter}:MAIN_FIRST ${macbook-left-half}
+layout space_2 ${finder}:MAIN_FIRST ${macbook-left-half}
 
 bind 1:${hyper_multi} layout space_1
 bind 2:${hyper_multi} layout space_2
