@@ -2,7 +2,6 @@ var fs = require('fs'),
     http = require('http'),
     path = require('path');
 
-    console.log(process.argv[2]);
 var port = process.argv[2] || 8080;
 
 http.createServer(function(req, res) {
