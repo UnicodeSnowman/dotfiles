@@ -626,7 +626,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles</string>
+	<string>~/Pictures</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -653,7 +653,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>354 184 924 485 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 715 650 451 0 0 1920 1178 </string>
+	<string>0 312 650 451 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1538,7 +1538,7 @@
 			<key>Background Image Location</key>
 			<string></string>
 			<key>Blend</key>
-			<real>0.30000001192092896</real>
+			<real>0.47497421503067017</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -2072,7 +2072,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.1677306741476059</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -2810,6 +2810,8 @@
 			<string>/Users/christopher</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesLost</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2872,7 +2874,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-04-24T19:24:29Z</date>
+	<date>2013-06-24T14:55:23Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
