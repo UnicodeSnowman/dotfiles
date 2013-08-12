@@ -7,6 +7,7 @@ PS1="\[$(tput setaf 666)\]\w \$ \[$(tput sgr0)\]"
 
 # aliases
 alias dropbox='cd ~/Dropbox'
+alias ctags="`brew --prefix`/bin/ctags"
 
 $export PATH="~/.local/bin:usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
 
