@@ -650,10 +650,23 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>354 184 924 485 0 0 1920 1178 </string>
+	<string>378 158 924 485 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 312 650 451 0 0 1920 1178 </string>
+	<string>0 335 1058 689 0 0 1680 1028 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>0 16 1674 1012 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1529,11 +1542,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.15170273184776306</real>
+				<real>0.09617152065038681</real>
 				<key>Green Component</key>
-				<real>0.11783610284328461</real>
+				<real>0.094464905560016632</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.086813703179359436</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -2874,7 +2887,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-06-24T14:55:23Z</date>
+	<date>2013-09-23T15:42:56Z</date>
+	<key>SUSkippedVersion</key>
+	<string>1.0.0.20130622</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
