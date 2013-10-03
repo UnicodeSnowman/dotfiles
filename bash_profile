@@ -36,8 +36,8 @@ if [ -f ~/.functions ]; then
 fi
 
 # load bash_completion
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
 fi
 
 # ☃ 
