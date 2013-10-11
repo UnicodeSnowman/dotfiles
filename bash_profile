@@ -7,6 +7,7 @@ PS1="\[$(tput setaf 666)\]\w \$ \[$(tput sgr0)\]"
 
 # aliases
 alias dropbox='cd ~/Dropbox'
+alias ctags="`brew --prefix`/bin/ctags"
 
 #$export PATH="~/.local/bin:/usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
 
@@ -32,6 +33,11 @@ fi
 # load command line functions -------------------------------------
 if [ -f ~/.functions ]; then
     source ~/.functions
+fi
+
+# load bash_completion
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
 fi
 
 # ☃ 
