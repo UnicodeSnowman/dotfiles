@@ -11,6 +11,10 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 #$export PATH="~/.local/bin:/usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
 
+# scala
+SCALA_HOME=/usr/local/Cellar/scala/2.10.2/libexec
+PATH=$PATH:$SCALA_HOME/bin
+
 # -----------------------------------------------------------------
 #
 # Oh snap it's some python shit...
