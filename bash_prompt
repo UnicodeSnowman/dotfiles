@@ -1,1 +1,32 @@
 
+# colors
+black=$(tput setaf 0)
+blue=$(tput setaf 33)
+cyan=$(tput setaf 37)
+green=$(tput setaf 64)
+orange=$(tput setaf 166)
+purple=$(tput setaf 125)
+red=$(tput setaf 124)
+white=$(tput setaf 15)
+yellow=$(tput setaf 136)
+
+# enable git thangs
+function git_prompt() {
+    if [ $(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?) == 0 ]; then
+        printf "*"
+        printf "%s " "$white$(git symbolic-ref --quiet --short HEAD)"
+    else
+        return
+    fi
+}
+
+#prompt: \m/
+PS1="\[$white\]☃ "
+PS1+="\[$yellow\]"
+#PS1+="\u" #user
+#PS1+="@\h" 
+PS1+="\w " # working directory
+PS1+="\[$orange\]\$(git_prompt)"
+PS1+="\[$yellow\]\$ "
+PS1+="\[$(tput sgr0)\]" # terminal text
+
