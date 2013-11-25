@@ -6,6 +6,12 @@ function server {
    python -m SimpleHTTPServer $1
 }
 
+function geeknote {
+    if [ -f /usr/local/Cellar/geeknote/geeknote.py ]; then
+        python /usr/local/Cellar/geeknote/geeknote.py "$@"
+    fi
+}
+
 #function pass {
 #   node ~/.dotfiles/pass_params.js "test test test"
 #}
