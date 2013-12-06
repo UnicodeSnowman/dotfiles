@@ -6,11 +6,13 @@
 alias dropbox='cd ~/Dropbox'
 alias ctags="`brew --prefix`/bin/ctags"
 
-#$export PATH="~/.local/bin:/usr/local/heroku/bin:$HOME/.rvm/bin:/usr/local/sbin:$PATH"
-
 # scala
 SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec
-PATH=$PATH:$SCALA_HOME/bin
+
+# nginx
+NGINX_HOME=/usr/local/Cellar/nginx/1.2.7/sbin
+
+PATH=$PATH:$SCALA_HOME/bin:$NGINX_HOME
 
 # -----------------------------------------------------------------
 #
