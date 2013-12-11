@@ -14,20 +14,6 @@ NGINX_HOME=/usr/local/Cellar/nginx/1.2.7/sbin
 
 PATH=$PATH:$SCALA_HOME/bin:$NGINX_HOME
 
-# -----------------------------------------------------------------
-#
-# Oh snap it's some python shit...
-#
-# -----------------------------------------------------------------
-if [ -d ~/.local/bin ]; then
-  export PATH=~/.local/bin:$PATH
-fi
-
-# Python path -----------------------------------------------------
-if [ -d ~/.local/lib/python2.7/site-packages ]; then
-  export PYTHONPATH=~/.local/lib/python2.7/site-packages:$PYTHONPATH
-fi
-
 # Load in .bashrc -------------------------------------------------
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
