@@ -15,7 +15,7 @@ SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec
 # nginx
 NGINX_HOME=/usr/local/Cellar/nginx/1.2.7/sbin
 
-PATH=$PATH:$SCALA_HOME/bin:$NGINX_HOME
+export PATH=/usr/local/bin:$PATH:/usr/local/heroku/bin:$SCALA_HOME/bin:$NGINX_HOME
 
 # Load in .bash_prompt --------------------------------------------
 if [ -f ~/.bash_prompt ]; then
