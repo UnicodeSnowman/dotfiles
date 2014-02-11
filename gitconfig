@@ -17,3 +17,10 @@
     changed = yellow
     untracked = yellow reverse
     branch = yellow
+[merge]
+	tool = p4merge
+[mergetool]
+	prompt = false
+	keepBackup = false
+[mergetool "p4merge"]
+	path = /usr/local/bin/p4merge

@@ -560,6 +560,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
@@ -591,7 +593,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles</string>
+	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{941, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -624,7 +626,7 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>275 838 384 129 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 541 650 476 0 0 1680 1028 </string>
+	<string>6 26 1674 476 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>892 549 570 451 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
@@ -2082,6 +2084,8 @@
 			<string>/Users/christopher</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2144,7 +2148,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-02-03T13:09:22Z</date>
+	<date>2014-02-05T17:04:47Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2186,6 +2190,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130622</string>
+	<string>1.0.0.20140112</string>
 </dict>
 </plist>

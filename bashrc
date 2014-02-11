@@ -7,7 +7,7 @@ set -o vi
 # aliases
 alias dropbox='cd ~/Dropbox'
 alias ctags="`brew --prefix`/bin/ctags"
-alias gpom="git pull origin master"
+alias gpcb="git pull origin $(printf "$(git symbolic-ref --quiet --short HEAD)")"
 
 # scala
 SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec
