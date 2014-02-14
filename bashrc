@@ -7,7 +7,12 @@ set -o vi
 # aliases
 alias dropbox='cd ~/Dropbox'
 alias ctags="`brew --prefix`/bin/ctags"
-alias gpcb="git pull origin $(printf "$(git symbolic-ref --quiet --short HEAD)")"
+
+# git commands 
+# (TO DO break out check for git into function, as I'm using this in bash_prompt too)
+if [ $(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?) == 0 ]; then
+    alias gpcb="git pull origin $(printf "$(git symbolic-ref --quiet --short HEAD)")"
+fi
 
 # scala
 SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec
