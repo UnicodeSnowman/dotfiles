@@ -20,7 +20,10 @@ SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec
 # nginx
 NGINX_HOME=/usr/local/Cellar/nginx/1.2.7/sbin
 
-export PATH=/usr/local/bin:$PATH:/usr/local/heroku/bin:$SCALA_HOME/bin:$NGINX_HOME
+# postgres
+POSTGRES_HOME=/Applications/Postgres93.app/Contents/MacOS/bin/
+
+export PATH=/usr/local/bin:$PATH:/usr/local/heroku/bin:$SCALA_HOME/bin:$NGINX_HOME:$POSTGRES_HOME
 
 # Load in .bash_prompt --------------------------------------------
 if [ -f ~/.bash_prompt ]; then
