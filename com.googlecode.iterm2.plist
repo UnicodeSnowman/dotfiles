@@ -573,7 +573,7 @@
 	<key>HotKeyTogglesWindow</key>
 	<true/>
 	<key>Hotkey</key>
-	<true/>
+	<false/>
 	<key>HotkeyChar</key>
 	<integer>126</integer>
 	<key>HotkeyCode</key>
@@ -626,9 +626,9 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>275 838 384 129 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 552 1680 476 0 0 1680 1028 </string>
+	<string>-144 1632 650 476 -144 1050 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>892 549 570 451 0 0 1680 1028 </string>
+	<string>941 1591 650 476 -144 1050 1920 1058 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2148,7 +2148,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-05-19T13:48:11Z</date>
+	<date>2014-06-25T23:30:04Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2190,6 +2190,6 @@
 	<key>WordCharacters</key>
 	<string></string>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140421</string>
+	<string>1.0.0.20140518</string>
 </dict>
 </plist>
