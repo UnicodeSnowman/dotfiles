@@ -6,6 +6,7 @@ set -o vi
 # aliases
 alias dropbox='cd ~/Dropbox'
 alias ctags="`brew --prefix`/bin/ctags"
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # git commands 
 # (TO DO break out check for git into function, as I'm using this in bash_prompt too)
