@@ -3,7 +3,7 @@ function md() {
 }
 
 function server {
-   python -m SimpleHTTPServer $1
+   python -m SimpleHTTPServer $1 > /dev/null 2>&1
 }
 
 function geeknote {

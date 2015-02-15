@@ -26,6 +26,8 @@ POSTGRES_HOME=/Applications/Postgres93.app/Contents/MacOS/bin/
 
 export PATH=/usr/local/bin:$PATH:/usr/local/heroku/bin:$SCALA_HOME/bin:$NGINX_HOME:$POSTGRES_HOME
 
+export EDITOR=/usr/bin/vim
+
 # Load in .bash_prompt --------------------------------------------
 if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
