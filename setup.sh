@@ -7,6 +7,6 @@ for file in $( ls $(dirname $0)/home ); do
     else
         echo "$file already exists, deleting and re-linking"
 	rm ~/.$file
-        ln -s $(dirname $0)/$file ~/.$file
+        ln -s $(dirname $0)/home/$file ~/.$file
     fi
 done
