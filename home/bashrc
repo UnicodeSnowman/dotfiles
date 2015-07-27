@@ -14,16 +14,12 @@ if [ $(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?) == 0 ]; 
     alias gs="git status"
 fi
 
-# scala
-SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec
-
-# nginx
 NGINX_HOME=/usr/local/Cellar/nginx/1.2.7/sbin
-
-# postgres
 POSTGRES_HOME=/Applications/Postgres93.app/Contents/MacOS/bin/
+RUST_HOME=/usr/local/Cellar/rust/1.1.0/bin/
+HEROKU_PATH=/usr/local/heroku/bin
 
-export PATH=/usr/local/bin:$PATH:/usr/local/heroku/bin:$SCALA_HOME/bin:$NGINX_HOME:$POSTGRES_HOME
+export PATH=/usr/local/bin:$PATH:$HEROKU_PATH:$NGINX_HOME:$POSTGRES_HOME:$RUST_HOME
 
 export EDITOR=/usr/bin/vim
 
