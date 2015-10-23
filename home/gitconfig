@@ -1,6 +1,6 @@
 [user]
-	name = unicodesnowman
-	email = utfsnowman@gmail.com
+    name = unicodesnowman
+    email = utfsnowman@gmail.com
 [color]
     ui = true
 [color "branch"]
@@ -18,15 +18,15 @@
     untracked = yellow reverse
     branch = yellow
 [merge]
-	tool = p4merge
+    tool = p4merge
 [mergetool]
-	prompt = false
-	keepBackup = false
+    prompt = false
+    keepBackup = false
 [mergetool "p4merge"]
-	path = /usr/local/bin/p4merge
+    path = /usr/local/bin/p4merge
 [alias]
     s = "status"
 [alias]
     delete-merged = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
 [core]
-	excludesfile = /Users/christopher/.gitignore
+    excludesfile = ~/.dotfiles/home/gitignore

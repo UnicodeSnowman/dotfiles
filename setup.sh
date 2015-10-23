@@ -9,7 +9,7 @@ for file in $( ls $(dirname $0)/home ); do
         ln -s $FILE_PATH ~/.$file
     else
         echo "$file already exists, deleting and re-linking"
-	rm ~/.$file
+    rm ~/.$file
         ln -s $FILE_PATH ~/.$file
     fi
 done
