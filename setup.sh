@@ -14,4 +14,4 @@ for file in $( ls $(dirname $0)/home ); do
     fi
 done
 
-git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tmux_plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tpm
