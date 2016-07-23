@@ -16,10 +16,9 @@ NGINX_HOME=/usr/local/Cellar/nginx/1.2.7/sbin
 POSTGRES_HOME=/Applications/Postgres93.app/Contents/MacOS/bin/
 RUST_HOME=/usr/local/Cellar/rust/1.1.0/bin/
 HEROKU_PATH=/usr/local/heroku/bin
-HOMEBREW_GITHUB_API_TOKEN="54ed00f6c0a13a50173a3756321ee81b54fa2eed"
 
 export PATH=/usr/local/bin:$PATH:$HEROKU_PATH:$NGINX_HOME:$POSTGRES_HOME:$RUST_HOME
-
+export HOMEBREW_GITHUB_API_TOKEN="54ed00f6c0a13a50173a3756321ee81b54fa2eed"
 export EDITOR=/usr/bin/vim
 
 # Load in .bash_prompt --------------------------------------------
