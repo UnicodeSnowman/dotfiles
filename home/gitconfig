@@ -30,3 +30,9 @@
     delete-merged = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
 [core]
     excludesfile = ~/.dotfiles/home/gitignore
+[web]
+	browser = open
+[browser "ff"]
+	cmd = open -a Firefox.app
+[browser "chrome"]
+	cmd = open -a Google\\ Chrome.app

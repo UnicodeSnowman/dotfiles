@@ -1,3 +1,4 @@
 *.sw*
 .project_commands
+.vimrc.local
 Session.vim
