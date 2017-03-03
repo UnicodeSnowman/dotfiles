@@ -2,3 +2,4 @@
 .project_commands
 .vimrc.local
 Session.vim
+.env.local
