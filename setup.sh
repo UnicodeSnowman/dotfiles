@@ -14,4 +14,8 @@ for file in $( ls $(dirname $0)/home ); do
     fi
 done
 
-git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tpm
+TPM_PATH=~/.dotfiles/tpm
+
+if [ ! -d $TPM_PATH ]; then
+    git clone https://github.com/tmux-plugins/tpm $TPM_PATH
+fi
