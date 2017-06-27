@@ -32,7 +32,7 @@
 [alias]
     delete-merged = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
 [core]
-    excludesfile = /Users/christophercaplinger/.dotfiles/home/gitignore
+    excludesfile = ~/.dotfiles/home/gitignore
 [web]
     browser = open
 [browser "ff"]
