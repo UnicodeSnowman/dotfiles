@@ -29,6 +29,7 @@
     s = "status"
     pf = "push --force-with-lease"
     cpd = "!git checkout master; git pull --rebase origin master; git delete-merged;"
+    pretty-log = "log --all --graph --date-order --pretty=format:'%C(yellow)%h%C(bold red)%d%Creset %s %Cgreen{%an} %Cblue%cr%Creset' --abbrev-commit"
 [alias]
     delete-merged = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
 [core]
