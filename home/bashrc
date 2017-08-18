@@ -15,14 +15,16 @@ fi
 
 NGINX_HOME=/usr/local/Cellar/nginx/1.2.7/sbin
 POSTGRES_HOME=/Applications/Postgres93.app/Contents/MacOS/bin/
-RUST_HOME=/usr/local/Cellar/rust/1.1.0/bin/
 HEROKU_PATH=/usr/local/heroku/bin
 GOPATH=~/go
+CARGO_PATH=~/.cargo
 
-export GOPATH=$GOPATH
-export PATH=/usr/local/bin:$PATH:$HEROKU_PATH:$NGINX_HOME:$POSTGRES_HOME:$RUST_HOME:$GOPATH/bin
-export HOMEBREW_GITHUB_API_TOKEN="54ed00f6c0a13a50173a3756321ee81b54fa2eed"
 export EDITOR=/usr/bin/vim
+export GOPATH=$GOPATH
+export HOMEBREW_GITHUB_API_TOKEN="54ed00f6c0a13a50173a3756321ee81b54fa2eed"
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+
+export PATH=/usr/local/bin:$PATH:$HEROKU_PATH:$NGINX_HOME:$POSTGRES_HOME:$GOPATH/bin:$CARGO_PATH/bin
 
 # Load in .bash_prompt --------------------------------------------
 if [ -f ~/.bash_prompt ]; then
