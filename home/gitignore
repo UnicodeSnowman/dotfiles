@@ -3,3 +3,4 @@
 .vimrc.local
 Session.vim
 .env.local
+.vscode
