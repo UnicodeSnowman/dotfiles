@@ -21,7 +21,6 @@ CARGO_PATH=~/.cargo
 
 export EDITOR=/usr/bin/vim
 export GOPATH=$GOPATH
-export HOMEBREW_GITHUB_API_TOKEN="54ed00f6c0a13a50173a3756321ee81b54fa2eed"
 export PATH=/usr/local/bin:$PATH:$HEROKU_PATH:$NGINX_HOME:$POSTGRES_HOME:$GOPATH/bin:$CARGO_PATH/bin:./node_modules/.bin
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
