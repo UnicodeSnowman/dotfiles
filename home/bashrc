@@ -25,12 +25,17 @@ export PATH=/usr/local/bin:$PATH:$HEROKU_PATH:$NGINX_HOME:$POSTGRES_HOME:$GOPATH
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
-# Load in .bash_prompt --------------------------------------------
+# Load in .bash_profile.local
+if [ -f ./.bash_profile.local ]; then
+  source ./.bash_profile.local
+fi
+
+# Load in .bash_prompt
 if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
 fi
 
-# load command line functions -------------------------------------
+# load command line functions
 if [ -f ~/.functions ]; then
     source ~/.functions
 fi
