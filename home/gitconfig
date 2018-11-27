@@ -1,6 +1,7 @@
 [user]
-    name = unicodesnowman
-    email = utfsnowman@gmail.com
+	name = Christopher Caplinger
+	email = utfsnowman@gmail.com
+	signingkey = 81E3433593C13374
 [color]
     ui = true
 [color "branch"]
@@ -39,3 +40,7 @@
     cmd = open -a Firefox.app
 [browser "chrome"]
     cmd = open -a Google\\ Chrome.app
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
